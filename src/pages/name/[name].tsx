@@ -27,7 +27,7 @@ const PokemonByNamePage: NextPage<Props> = ({ pokemon }) => {
     localfavorites.toogleFavorite(pokemon.id);
     setInFavorites(!isinFavorites);
 
-    if (!isinFavorites) return;
+    if (isinFavorites) return;
 
     confetti({
       zIndex: 999,
